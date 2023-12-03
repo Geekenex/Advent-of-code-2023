@@ -4,7 +4,7 @@ inputFile = open('1/input.txt', 'r')
 lines = inputFile.readlines()
  
 calibrationValuesSum = 0
-# Strips the newline character
+
 for line in lines:
     calibrationValuesLine = re.sub("[^0-9]", "", line)
     if(len(calibrationValuesLine) == 1):
